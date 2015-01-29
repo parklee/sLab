@@ -6,6 +6,8 @@
 * Ionic Framework
 * Angularjs
 * PhoneGap
+* XCode
+* Android Studio
 
 ### インストール方法###
 
@@ -17,11 +19,9 @@
 - Macの場合　`sudo npm install -g cordova `
 - Windowsの場合　`npm install -g cordova `
 
-### コンパイルとイミュレータでの動作確認 ###
+3. #### [XCode](https://developer.apple.com/jp/xcode/downloads/)
 
-* 
+4. #### [Android studio](http://developer.android.com/sdk/index.html)
 
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+##### 上記参考URL
+[http://thejackalofjavascript.com/ionic-angularjs-and-phonegap-build/](http://thejackalofjavascript.com/ionic-angularjs-and-phonegap-build/)
