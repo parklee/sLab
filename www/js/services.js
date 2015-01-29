@@ -59,17 +59,17 @@ angular.module('starter.services', [])
   // Some fake testing data
   var friends = [{
     id: 0,
-    name: 'Ben Sparrow',
+    name: 'テスト太郎',
     notes: 'Enjoys drawing things',
     face: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'
   }, {
     id: 1,
-    name: 'Max Lynx',
+    name: 'テスト二郎',
     notes: 'Odd obsession with everything',
     face: 'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'
   }, {
     id: 2,
-    name: 'Andrew Jostlen',
+    name: 'テスト三郎',
     notes: 'Wears a sweet leather Jacket. I\'m a bit jealous',
     face: 'https://pbs.twimg.com/profile_images/491274378181488640/Tti0fFVJ.jpeg'
   }, {
