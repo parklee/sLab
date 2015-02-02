@@ -1,28 +1,20 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {})
+.controller('CompanyListCtrl', ['$scope', '$http',
+  function($scope, $http) {
+    $http({
+      method: 'get',
+      url: 'http://157.7.141.161:9000/job/list/',
+      withCredentials: true
+    }).
+　　success(function(data) {
+  //alert('Secuss' + data);
+      $scope.resultList = data.result.resultList;
+    }).
+　　error(function(data, status) {
+      alert('通信エラーが発生しました' + status);
+    });
 
-.controller('ChatsCtrl', function($scope, Chats) {
-  $scope.chats = Chats.all();
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
-  }
-})
-
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
-  $scope.chat = Chats.get($stateParams.chatId);
-})
-
-.controller('FriendsCtrl', function($scope, Friends) {
-  $scope.friends = Friends.all();
-})
-
-.controller('FriendDetailCtrl', function($scope, $stateParams, Friends) {
-  $scope.friend = Friends.get($stateParams.friendId);
-})
-
-.controller('AccountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
-});
+    //$scope.orderProp = 'age';
+  }]
+);

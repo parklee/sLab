@@ -47,13 +47,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
-
+<!--joblist-->
   .state('tab.chats', {
       url: '/chats',
       views: {
         'tab-chats': {
           templateUrl: 'templates/tab-chats.html',
-          controller: 'ChatsCtrl'
+          controller: 'CompanyListCtrl'
         }
       }
     })
