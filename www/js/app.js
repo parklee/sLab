@@ -57,6 +57,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+  <!--jobInfo-->
     .state('tab.chat-detail', {
       url: '/chats/:chatId',
       views: {
