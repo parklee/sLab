@@ -22,7 +22,12 @@
 3. #### [XCode](https://developer.apple.com/jp/xcode/downloads/)
 
 4. #### [Android studio](http://developer.android.com/sdk/index.html)
-    SDKもインストール
+    - SDKインストール
+    - .bash_profileについては[ここ](https://github.com/diegonetto/generator-ionic/blob/master/docs/android.md)を参照
+
+### テスト方法 ###
+- iosの場合　`ionic emulate ios `
+- androidの場合　`ionic emulate android `
 
 ##### 上記参考URL
 [http://thejackalofjavascript.com/ionic-angularjs-and-phonegap-build/](http://thejackalofjavascript.com/ionic-angularjs-and-phonegap-build/)
