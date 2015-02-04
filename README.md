@@ -29,5 +29,9 @@
 - iosの場合　`ionic emulate ios `
 - androidの場合　`ionic emulate android `
 
-##### 上記参考URL
+##### 参考URL
+### 環境構築
 [http://thejackalofjavascript.com/ionic-angularjs-and-phonegap-build/](http://thejackalofjavascript.com/ionic-angularjs-and-phonegap-build/)
+
+### サーバーAPIの結果を画面上に表示
+[http://fukumura.org/538.html](http://fukumura.org/538.html)
