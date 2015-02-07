@@ -8,6 +8,7 @@
 * PhoneGap
 * XCode
 * Android Studio
+* SASS
 
 ### インストール方法 ###
 
@@ -25,13 +26,18 @@
     - SDKインストール
     - .bash_profileについては[ここ](https://github.com/diegonetto/generator-ionic/blob/master/docs/android.md)を参照
 
+5. #### [SASS](http://learn.ionicframework.com/videos/sass/)
+
 ### テスト方法 ###
 - iosの場合　`ionic emulate ios `
 - androidの場合　`ionic emulate android `
 
-##### 参考URL
-### 環境構築
+### 参考URL
+##### 環境構築
 [http://thejackalofjavascript.com/ionic-angularjs-and-phonegap-build/](http://thejackalofjavascript.com/ionic-angularjs-and-phonegap-build/)
 
-### サーバーAPIの結果を画面上に表示
+##### サーバーAPIの結果を画面上に表示
 [http://fukumura.org/538.html](http://fukumura.org/538.html)
+
+##### SASSホームページ
+[http://sass-lang.com/](http://sass-lang.com/)
