@@ -26,7 +26,7 @@
     - SDKインストール
     - .bash_profileについては[ここ](https://github.com/diegonetto/generator-ionic/blob/master/docs/android.md)を参照
 
-5. #### [SASS](http://learn.ionicframework.com/videos/sass/)
+5. #### [SASS](http://ionicframework.com/docs/cli/sass.html)
 
 ### テスト方法 ###
 - iosの場合　`ionic emulate ios `
