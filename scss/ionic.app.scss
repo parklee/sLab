@@ -15,9 +15,34 @@ $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
 
+$positive:                        #6666FF !default;
+
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+.tbl_style{
+width: 100%;
+border-collapse: collapse;
+}
+.tbl_style th {
+width: 25%;
+padding: 6px;
+text-align: left;
+vertical-align: top;
+color: #333;
+background-color: #eee;
+border: 1px solid #b9b9b9;
+}
+.tbl_style td {
+padding: 6px;
+background-color: #fff;
+border: 1px solid #b9b9b9;
+}
+
+.div_box {
+  float: left;
+  //background:#F4E3DC;
+}

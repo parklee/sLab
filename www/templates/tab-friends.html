@@ -1,10 +1,21 @@
 <ion-view view-title="Friends">
   <ion-content>
     <ion-list>
-      <ion-item class="item-avatar" ng-repeat="friend in friends" type="item-text-wrap" href="#/tab/friend/{{friend.id}}">
-        <img ng-src="{{friend.face}}">
-        <h2>{{friend.name}}</h2>
-      </ion-item>
+        <table style="border:1px #00ffff solid; margin:5px 0px;" width="100%" ng-repeat="friend in friends">
+          <th style="background-color: #ccffff;" colspan="2">・Pretty Hate Machine</th>
+          <th></th>
+          <tr align="center">
+            <td width="45%" style="background-color: #ffffff">aaaaaaaaa</td>
+            <td width="45%" style="background-color: #eeffff">bbbbbbbbb</td>
+            <td><i class="ion-chevron-right"></td>
+          </tr>
+          <tr align="center" style="margin-bottom: 1px;">
+            <td width="45%" style="background-color: #eeffff">ccccccc</td>
+            <td width="45%" style="background-color: #ffffff">ddddd</td>
+            <td></td>
+          </tr>
+        </table>
+
     </ion-list>
   </ion-content>
 </ion-view>

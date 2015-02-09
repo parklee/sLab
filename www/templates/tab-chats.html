@@ -1,15 +1,26 @@
-<ion-view view-title="Chats">
+<ion-view view-title="募集一覧">
   <ion-content>
-<ion-list>
-    <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="comp in resultList" type="item-text-wrap">
-        <h2>{{comp.company_id}}</h2>
-        <h1>{{comp.item_img_url}}</h1>
-        <h2>{{comp.tag}}</h2>
-        <i class="icon ion-chevron-right icon-accessory"></i>
-        <ion-option-button class="button-assertive" ng-click="remove(comp)">
+    <ion-list>
+      <!--画面レイアウト異常のため一時退避 20150210-->
+      <!--<ion-item ng-repeat="comp in resultList" href="#/tab/chats/{{chat.id}}">-->
+      <table style="border:1px #00ffff solid; margin:5px 0px;" width="100%" ng-repeat="comp in resultList" href="#/tab/chats/{{comp.company_name}}">
+        <th style="background-color: #ccffff;" colspan="2">{{comp.company_name}}</th>
+        <th></th>
+        <tr align="center">
+          <td width="45%" style="background-color: #ffffff">{{comp.item_img_url}}</td>
+          <td width="45%" style="background-color: #eeffff">{{comp.tag}}</td>
+          <td><i class="ion-chevron-right"></td>
+        </tr>
+        <tr align="center" style="margin-bottom: 1px;">
+          <td width="45%" style="background-color: #eeffff">{{comp.tag}}</td>
+          <td width="45%" style="background-color: #ffffff">{{comp.item_img_url}}</td>
+          <td></td>
+        </tr>
+        <!--<ion-option-button class="button-assertive" ng-click="remove(comp)">
           Delete
-        </ion-option-button>
-      </ion-item>
+        </ion-option-button>-->
+      </table>
+      <!--</ion-item>-->
     </ion-list>
   </ion-content>
 </ion-view>
