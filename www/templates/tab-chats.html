@@ -1,15 +1,12 @@
-<ion-view view-title="Chats">
+<ion-view class="body_bgcolor" view-title="Jobinder">
   <ion-content>
-<ion-list>
-    <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="comp in resultList" >
+    <div class="card" style="border-top: solid 2px #FFA726" ng-repeat="comp in resultList">
+      <a  style="text-decoration: none" href="#/tab/chats/{{comp.company_name}}">
+      <div class="item item-text-wrap">
         <h2>{{comp.company_name}}</h2>
-        <h1>{{comp.item_img_url}}</h1>
-        <h2>{{comp.tag}}</h2>
-        <i class="icon ion-chevron-right icon-accessory"></i>
-        <ion-option-button class="button-assertive" ng-click="remove(comp)">
-          Delete
-        </ion-option-button>
-      </ion-item>
-    </ion-list>
+        {{comp.item_img_url}}
+      </div>
+    </a>
+    </div>
   </ion-content>
 </ion-view>
