@@ -4,7 +4,7 @@ angular.module('starter.controllers', [])
   function($scope, $http) {
     $http({
       method: 'get',
-      url: 'http://157.7.141.161:9000/job/list/',
+      url: 'http://157.7.141.161:9000/job/list/0/10/',
       withCredentials: false
     }).
     success(function(data) {
