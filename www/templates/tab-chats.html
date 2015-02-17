@@ -1,6 +1,6 @@
 <ion-view class="body_bgcolor" view-title="Jobinder">
   <ion-content>
-    <div class="card" style="border-top: solid 2px #FFA726" ng-repeat="comp in resultList">
+    <div class="card" style="border-top: solid 2px #FFA726" ng-repeat="comp in resultList" >
       <a  style="text-decoration: none" href="#/tab/chats/{{comp.company_name}}">
       <div class="item item-text-wrap">
         <h2>{{comp.company_name}}</h2>
@@ -8,5 +8,7 @@
       </div>
     </a>
     </div>
+    <ion-infinite-scroll ng-if="!noMoreItemsAvailable" on-infinite="loadMore()"></ion-infinite-scroll>
   </ion-content>
+</ion-content>
 </ion-view>
