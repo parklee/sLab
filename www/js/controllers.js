@@ -26,8 +26,13 @@ angular.module('starter.controllers', ['ionic'])
   };
   }
 )
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
-  //alert($stateParams.chatId);
-  $scope.chat = Chats.get($stateParams.chatId);
-
+.controller('ChatDetailCtrl', function($scope, $http,$stateParams) {
+  $http.get('http://157.7.141.161:9000/job/get/' + $stateParams.job_id + '/').then(function(resp) {
+    if (resp.data.result != null) {
+      $scope.job_info = resp.data.result;
+      $scope.showResponse = true;
+    }
+  }, function(err) {
+    console.error('ERR', err);
+  });
 });

@@ -2778,7 +2778,7 @@ a.subdued {
       background-image: linear-gradient(180deg, #b2b2b2, #b2b2b2 50%, transparent 50%); }
   .bar.bar-positive {
     border-color: #0c63ee;
-    background-color: #164888;
+    background-color: #387ef5;
     background-image: linear-gradient(0deg, #0c63ee, #0c63ee 50%, transparent 50%);
     color: #fff; }
     .bar.bar-positive .title {
@@ -3215,7 +3215,7 @@ a.subdued {
 
 .tabs-positive > .tabs, .tabs.tabs-positive {
   border-color: #0c63ee;
-  background-color: #164888;
+  background-color: #387ef5;
   background-image: linear-gradient(0deg, #0c63ee, #0c63ee 50%, transparent 50%);
   color: #fff; }
   .tabs-positive > .tabs .tab-item .badge, .tabs.tabs-positive .tab-item .badge {
@@ -7014,14 +7014,6 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
-
-.head_style {
-  background-color: #164888;
-  color: #fff; }
-
-.bottom_style {
-  background-color: #164888;
-  color: #fff; }
 
 .body_bgcolor {
   background-color: #eeeeff; }
