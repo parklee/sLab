@@ -4,11 +4,33 @@
   The FriendsCtrl pulls data from the Friends service (service.js)
   The Friends service returns an array of friend data
 -->
-<ion-view view-title="{{chat.name}}">
-  <ion-content class="padding">
-    <img ng-src="{{chat.face}}" style="width: 64px; height: 64px">
-    <p>
-      {{chat.lastText}}
-    </p>
+<ion-view view-title="仕事詳細">
+  <ion-content class="body_bgcolor">
+    <div ng-if="!showResponse">
+      仕事詳細を取得できませんでした。
+    </div>
+    <div ng-if="showResponse">
+      <div class="card">
+        <div class="item item-divider" style="background-color: #eeeeff;border-top: solid 2px #99CCFF;">
+          {{job_info.job_title}}
+        </div>
+        <div class="item item-text-wrap">
+          {{job_info.description1}}
+        </div>
+        <div class="item item-text-wrap">
+          {{job_info.description2}}
+        </div>
+        <div class="item item-text-wrap">
+          {{job_info.description3}}
+        </div>
+        <div class="item item-text-wrap">
+          {{job_info.description4}}
+        </div>
+        <a style="background-color: #eeeeff" class="item item-divider item-icon-right" href="#/tab/company/{{job_info.company_id}}">
+          応募先 <i class="icon ion-ios7-telephone-outline"></i>
+        </a>
+
+      </div>
+    </div>
   </ion-content>
 </ion-view>

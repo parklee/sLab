@@ -1,10 +1,10 @@
-<ion-view view-title="Jobinder">
+<ion-view view-title="募集一覧">
   <ion-content class="body_bgcolor" >
-    <div class="card" style="border-top: solid 2px #99CCFF" ng-repeat="comp in resultList" >
-      <a  style="text-decoration: none" href="#/tab/chats/{{comp.company_name}}">
+    <div class="card" style="border-top: solid 2px #99CCFF" ng-repeat="job in resultList" >
+      <a  style="text-decoration: none" href="#/tab/chats/{{job.id}}">
       <div class="item item-text-wrap">
-        <h2>{{comp.company_name}}</h2>
-        {{comp.item_img_url}}
+        <h2>{{job.company_name}}</h2>
+        {{job.item_img_url}}
       </div>
     </a>
     </div>
